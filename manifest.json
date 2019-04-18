@@ -10,7 +10,7 @@
     "browser_action": {
       "default_title": "IPL - Swiggy 6",
       "default_icon": "ipl.png",
-      "default_popup": "index.html"
+      "default_popup": "popup.html"
     },
     "background": {
         "persistent":true,
