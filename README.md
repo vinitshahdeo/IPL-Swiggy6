@@ -46,7 +46,7 @@ MIT &copy; **[Vinit Shahdeo](https://github.com/vinitshahdeo)**
 
 ### Thanks!
 
-**Feel free to share this extension with your friends!** 
+**Feel free to share [this](https://vinitshahdeo.github.io/IPL-Swiggy6/) extension with your friends!** 
 
 [![IPL SWIGGY6](https://forthebadge.com/images/badges/built-with-love.svg)](https://vinitshahdeo.github.io/IPL-Swiggy6/) [![IPL SWIGGY6](https://forthebadge.com/images/badges/check-it-out.svg)](https://vinitshahdeo.github.io/IPL-Swiggy6/)
 
