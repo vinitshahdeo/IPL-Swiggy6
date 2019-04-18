@@ -95,50 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("developer").addEventListener("click", openGitHub);
 });
 
-
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-function initializeClock(endtime) {
-  clearInterval(timeinterval);
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-    if (t.minutes == '0' && t.seconds == '0') {
-      document.getElementById('timer').innerHTML = 'IPL 2019';
-    }
-    else {
-      var countdown = '0' + t.minutes + ' min ';
-      if (t.seconds < 10) {
-        countdown += '0' + t.seconds + ' sec';
-      }
-      else {
-        countdown += t.seconds + ' sec';
-      }
-      document.getElementById('timer').innerHTML = '<span class="label label-danger">' + countdown + '</span>';
-    }
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
 function alarm() {
   chrome.storage.local.get(['alarm'], function(result) {
     //var myAudio = new Audio(chrome.runtime.getURL("ipl.mp3"));
@@ -199,4 +155,101 @@ function getFlag(team) {
 function openGitHub() {
   window.open('https://www.github.com/vinitshahdeo',
     ' ', 'width=50%, height=30%');
+}
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function alarm() {
+  chrome.storage.local.get(['alarm'], function(result) {
+    //var myAudio = new Audio(chrome.runtime.getURL("ipl.mp3"));
+    if (result.alarm === 'true') {
+      playAudio();
+    }
+  });
+}
+
+function alarmOff() {
+  chrome.storage.local.set({
+    alarm: 'false'
+  }, function() {
+    console.log('alarm is off');
+  });
+}
+
+function alarmOn() {
+  chrome.storage.local.set({
+    alarm: 'true'
+  }, function() {
+    console.log('alarm is on');
+  });
+}
+
+function playAudio() {
+  var myAudio = new Audio(chrome.runtime.getURL("ipl.mp3"));
+  myAudio.play();
+}
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(endtime) {
+  clearInterval(timeinterval);
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+    if (t.minutes == '0' && t.seconds == '0') {
+      document.getElementById('timer').innerHTML = 'IPL 2019';
+    }
+    else {
+      var countdown = '0' + t.minutes + ' min ';
+      if (t.seconds < 10) {
+        countdown += '0' + t.seconds + ' sec';
+      }
+      else {
+        countdown += t.seconds + ' sec';
+      }
+      document.getElementById('timer').innerHTML = '<span class="label label-danger">' + countdown + '</span>';
+    }
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+function fetchScore() {
+  chrome.storage.local.get(['score'], function(result) {
+    if (result.score) {
+      score = result.score;
+      console.log('score is fetched ',score);
+    }
+  });
 }

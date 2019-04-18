@@ -32,7 +32,8 @@ function cricbuzz() {
 }
 
 function notifyMe() {
-
+  var deadline = new Date(Date.parse(new Date()) + 6 * 60 * 1000);
+  initializeClock(deadline);
   console.log('Yess, SIX');
   if (Notification.permission !== "granted")
     Notification.requestPermission();
@@ -110,6 +111,49 @@ function alarmOn() {
 function playAudio() {
   var myAudio = new Audio(chrome.runtime.getURL("ipl.mp3"));
   myAudio.play();
+}
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(endtime) {
+  clearInterval(timeinterval);
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+    if (t.minutes == '0' && t.seconds == '0') {
+      document.getElementById('timer').innerHTML = 'IPL 2019';
+    }
+    else {
+      var countdown = '0' + t.minutes + ' min ';
+      if (t.seconds < 10) {
+        countdown += '0' + t.seconds + ' sec';
+      }
+      else {
+        countdown += t.seconds + ' sec';
+      }
+      document.getElementById('timer').innerHTML = '<span class="label label-danger">' + countdown + '</span>';
+    }
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
 }
 
 fetchScore();
