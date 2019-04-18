@@ -1,6 +1,5 @@
 <h1 align="center"> IPL <a href="https://6.swiggy.com/">SWIGGY6</a> Notifications</h1>
 
-
 ![SWIGGY](assets/swiggy.gif)
 
 <h2 align="center">A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="">60%</a> Off after every sixer within 6 minutes. Click <a href="https://vinitshahdeo.github.io/IPL-Swiggy6/popup.html">here</a> for the demo!</h2> 
@@ -49,6 +48,8 @@ MIT &copy; **[Vinit Shahdeo](https://github.com/vinitshahdeo)**
 **Feel free to share this extension with your friends!** 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
+
+![ipl six](assets/six.gif)
 
 [![IPL SWIGGY6](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://github.com/vinitshahdeo/IPL-Swiggy6/) [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](https://forthebadge.com)
 
