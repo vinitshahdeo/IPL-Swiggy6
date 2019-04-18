@@ -2,3 +2,4 @@ theme: jekyll-theme-minimal
 logo: ipl.png
 title: IPL SWIGGY6
 show_downloads: true
+description: A chrome extension to notify the sixers in live IPL matches. Get 60% Off after every sixer within 6 minutes.
