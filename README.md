@@ -32,7 +32,7 @@ Are you facing any issues in installation, feel free to contact me @ [vinitshahd
 
 ### Screenshots
 
-![screenshot](assets/swiggy6.jpg)
+![screenshot](assets/swiggy6.png)
 
 ### License
 
