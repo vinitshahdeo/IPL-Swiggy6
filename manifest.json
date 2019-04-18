@@ -4,12 +4,12 @@
     "version": "1.1",
     "description": "A chrome extension to notify the sixers in live IPL matches. Get 60% after every sixer within 6 minutes.",
 
-    "icons": { "128": "test.png" },
+    "icons": { "128": "ipl.png" },
       
 
     "browser_action": {
       "default_title": "IPL - Swiggy 6",
-      "default_icon": "test.png",
+      "default_icon": "ipl.png",
       "default_popup": "index.html"
     },
     "background": {
