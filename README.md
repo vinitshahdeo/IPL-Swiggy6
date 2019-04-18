@@ -16,7 +16,7 @@
 
 ### Installation Steps
 
-- Clone this repository using `git clone https://github.com/vinitshahdeo/IPL-Swiggy6` or download from [here]().
+- Clone this repository using `git clone https://github.com/vinitshahdeo/IPL-Swiggy6` or **download from [here](https://github.com/vinitshahdeo/IPL-Swiggy6/archive/master.zip)**.
 
 - Go to `chrome://extensions/` and check the box for Developer mode in the top right.
 
@@ -36,7 +36,7 @@ Are you facing any issues in installation, feel free to contact me @ [vinitshahd
 
 ### License
 
-MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo)
+MIT &copy; **[Vinit Shahdeo](https://github.com/vinitshahdeo)**
 
 ![GitHub](https://img.shields.io/github/license/vinitshahdeo/IPL-Swiggy6.svg?logo=github&style=social)  [![Vinit Shahdeo](https://img.shields.io/badge/GitHub-@vinitshahdeo-follow.svg?logo=github&style=social)](https://github.com/vinitshahdeo)
 [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
@@ -54,4 +54,4 @@ MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo)
 
 ---
 
-[![Facebook](https://img.shields.io/static/v1.svg?label=follow&message=@vinit.shahdeo&color=9cf&logo=facebook&style=flat&logoColor=white&colorA=informational)](https://www.facebook.com/vinit.shahdeo)  [![Instagram](https://img.shields.io/static/v1.svg?label=follow&message=@vinitshahdeo&color=grey&logo=instagram&style=flat&logoColor=white&colorA=orangel)](https://www.instagram.com/vinitshahdeo/) [![LinkedIn](https://img.shields.io/static/v1.svg?label=connect&message=@vinitshahdeo&color=success&logo=linkedin&style=flat&logoColor=white&colorA=blue)](https://www.linkedin.com/in/vinitshahdeo/) [![Quora](https://img.shields.io/badge/Quora-VinitShahdeo-red.svg?logo=quora)](https://www.quora.com/profile/Vinit-Shahdeo-1)
+[![Facebook](https://img.shields.io/static/v1.svg?label=follow&message=@vinit.shahdeo&color=9cf&logo=facebook&style=flat&logoColor=white&colorA=informational)](https://www.facebook.com/vinit.shahdeo)  [![Instagram](https://img.shields.io/static/v1.svg?label=follow&message=@vinitshahdeo&color=grey&logo=instagram&style=flat&logoColor=white&colorA=orange)](https://www.instagram.com/vinitshahdeo/) [![LinkedIn](https://img.shields.io/static/v1.svg?label=connect&message=@vinitshahdeo&color=success&logo=linkedin&style=flat&logoColor=white&colorA=blue)](https://www.linkedin.com/in/vinitshahdeo/) [![Quora](https://img.shields.io/badge/Quora-VinitShahdeo-red.svg?logo=quora)](https://www.quora.com/profile/Vinit-Shahdeo-1)
