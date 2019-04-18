@@ -3,14 +3,14 @@
 
 ![SWIGGY](assets/swiggy.gif)
 
-<h2 align="center">A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="">60%</a> Off after every sixer within 6 minutes.</h2>
+<h2 align="center">A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="">60%</a> Off after every sixer within 6 minutes. Click <a href="https://vinitshahdeo.github.io/IPL-Swiggy6/popup.html">here</a> for the demo!</h2> 
 
 ### IPL Swiggy6 Notifications
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/vinitshahdeo/IPL-Swiggy6.svg?logo=github&style=social)](https://github.com/vinitshahdeo/) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/IPL-Swiggy6.svg?logo=github&style=social)](https://github.com/vinitshahdeo/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/IPL-Swiggy6.svg?logo=git&style=social)](https://github.com/vinitshahdeo/) [![GitHub stars](https://img.shields.io/github/repo-size/vinitshahdeo/IPL-Swiggy6.svg?style=social)](https://github.com/vinitshahdeo/IPL-Swiggy6) [![GitHub forks](https://img.shields.io/github/forks/vinitshahdeo/IPL-Swiggy6.svg?style=social&logo=git)](https://github.com/vinitshahdeo/IPL-Swiggy6/network)
 
 
-> #### A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches. Get <a href="">60%</a> Off after every sixer within 6 minutes. It displays countdown timer and sends desktop notifications with sound.
+> #### A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches. Get <a href="">60%</a> Off after every sixer within 6 minutes. It displays countdown timer and sends desktop notifications with sound. Check demo [here](https://vinitshahdeo.github.io/IPL-Swiggy6/popup.html)
 
 [![chrome](https://img.shields.io/badge/Chrome-Extension-blue.svg?logo=google-chrome&style=for-the-badge&logoColor=critical)](https://github.com/vinitshahdeo/IPL-Swiggy6) [![chrome](https://img.shields.io/badge/IPL-SWIGGY6-orange.svg?logo=javascript&style=for-the-badge)](https://github.com/vinitshahdeo/IPL-Swiggy6)
 
