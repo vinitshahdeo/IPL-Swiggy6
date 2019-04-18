@@ -27,10 +27,10 @@ function test() {
             //notifyMe();
           }
           document.getElementById('batting-runs').innerHTML = matches[i].score.batting.innings[0].score + '/' + matches[i].score.batting.innings[0].wkts;
-          document.getElementById('batting-over').innerHTML = matches[i].score.batting.innings[0].overs;
+          document.getElementById('batting-over').innerHTML = matches[i].score.batting.innings[0].overs + '/20';
           '/20';
           document.getElementById('bowling-runs').innerHTML = matches[i].score.bowling.innings[0].score + '/' + matches[i].score.bowling.innings[0].wkts;
-          document.getElementById('bowling-over').innerHTML = matches[i].score.bowling.innings[0].overs;
+          document.getElementById('bowling-over').innerHTML = matches[i].score.bowling.innings[0].overs + '/20';
           '/20';
           document.getElementById('cricbuzz').innerHTML = (matches[i].state == 'mom' ? 'COMPLETED' : 'LIVE');
           

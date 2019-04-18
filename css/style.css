@@ -36,6 +36,10 @@ body {
   zoom: 1;
 }
 
+.vs {
+  opacity: 0.5;
+}
+
 .match-list .vs {
   float: none;
   line-height: normal;
