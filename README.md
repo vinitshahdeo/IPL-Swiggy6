@@ -47,11 +47,11 @@ MIT &copy; **[Vinit Shahdeo](https://github.com/vinitshahdeo)**
 
 **Feel free to share this extension with your friends!** 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
+[![IPL SWIGGY6](https://forthebadge.com/images/badges/built-with-love.svg)](https://vinitshahdeo.github.io/IPL-Swiggy6/) [![ipl swiggy6](https://forthebadge.com/images/badges/check-it-out.svg)](https://vinitshahdeo.github.io/IPL-Swiggy6/)
 
 ![ipl six](assets/six.gif)
 
-[![IPL SWIGGY6](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://github.com/vinitshahdeo/IPL-Swiggy6/) [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](https://forthebadge.com)
+[![IPL SWIGGY6](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://github.com/vinitshahdeo/IPL-Swiggy6/) [![IPL SWIGGY6](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://vinitshahdeo.github.io/IPL-Swiggy6/) [![IPL SWIGGY6](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](https://vinitshahdeo.github.io/IPL-Swiggy6/)
 
 ---
 
