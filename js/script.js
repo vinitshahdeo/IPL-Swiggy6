@@ -19,11 +19,12 @@ function test() {
           var summary = "";
           summary += matches[i].status;
           document.getElementById('summary').innerHTML = summary;
+          document.getElementById('vs').innerHTML = "versus";
           battingRuns = matches[i].score.batting.innings[0].score;
           document.getElementById('team1').innerHTML = "<img src='assets/" + getFlag(matches[i].team1.name) + "' class='img-rounded'>";
           document.getElementById('team2').innerHTML = "<img src='assets/" + getFlag(matches[i].team2.name) + "' class='img-rounded'>";
           if ((battingRuns - score) == 6) {
-            // notifyMe();
+            //notifyMe();
           }
           document.getElementById('batting-runs').innerHTML = matches[i].score.batting.innings[0].score + '/' + matches[i].score.batting.innings[0].wkts;
           document.getElementById('batting-over').innerHTML = matches[i].score.batting.innings[0].overs;
@@ -32,6 +33,7 @@ function test() {
           document.getElementById('bowling-over').innerHTML = matches[i].score.bowling.innings[0].overs;
           '/20';
           document.getElementById('cricbuzz').innerHTML = (matches[i].state == 'mom' ? 'COMPLETED' : 'LIVE');
+          
           break;
         }
       }

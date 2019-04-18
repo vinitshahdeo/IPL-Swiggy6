@@ -1,35 +1,39 @@
 var data = null;
 var score = 0;
 
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function() {
-  if (this.readyState === 4) {
-    var res = JSON.parse(this.responseText);
-    var data = res.matches;
-    var matches = Object.values(data);
-    for (var i = 0; i < matches.length; i++) {
-      console.log(matches[i]);
-      if (matches[i].series.type === 'IPL') {
-        //document.getElementById('summary').innerHTML = matches[i].status;
-        battingRuns = matches[i].score.batting.innings[0].score;
-        if ((battingRuns - score) == 6) {
-          notifyMe();
+function cricbuzz() {
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
+  
+  xhr.addEventListener("readystatechange", function() {
+    if (this.readyState === 4) {
+      var res = JSON.parse(this.responseText);
+      var data = res.matches;
+      var matches = Object.values(data);
+      for (var i = 0; i < matches.length; i++) {
+        // console.log(matches[i]);
+        if (matches[i].series.type === 'IPL') {
+          //document.getElementById('summary').innerHTML = matches[i].status;
+          battingRuns = matches[i].score.batting.innings[0].score;
+          
+          if ((battingRuns - score) == 6) {
+            notifyMe();
+            updateScore(battingRuns);
+          }
           updateScore(battingRuns);
+          break;
         }
-        break;
       }
     }
-  }
-});
-
-xhr.open("GET", "https://www.cricbuzz.com/match-api/livematches.json");
-xhr.send(data);
+  });
+  
+  xhr.open("GET", "https://www.cricbuzz.com/match-api/livematches.json");
+  xhr.send(data);
+}
 
 function notifyMe() {
 
-
+  console.log('Yess, SIX');
   if (Notification.permission !== "granted")
     Notification.requestPermission();
   else {
@@ -109,3 +113,5 @@ function playAudio() {
 }
 
 fetchScore();
+
+setInterval(cricbuzz, 2000);
