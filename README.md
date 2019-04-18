@@ -50,6 +50,8 @@ MIT &copy; **[Vinit Shahdeo](https://github.com/vinitshahdeo)**
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
+![ipl six](assets/six.gif)
+
 [![IPL SWIGGY6](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://github.com/vinitshahdeo/IPL-Swiggy6/) [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](https://forthebadge.com)
 
 ---
