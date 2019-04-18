@@ -1,0 +1,143 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.resultsMatches .panel-primary {
+  margin-bottom: 0px;
+  border-color: #F3950F;
+  border-radius: 0px;
+}
+
+.resultsMatches .match-header {
+  background: #F3950F;
+  border-color: #F3950F;
+  border-radius: 0px;
+}
+
+.label:hover {
+  cursor: pointer;
+}
+.white-color {
+  color: #fff;
+}
+
+.resultsMatches .panel-body {
+  background: #e3e3e3;
+}
+
+.team-left,
+.team-right,
+.team-score,
+.match-list .vs {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  zoom: 1;
+}
+
+.match-list .vs {
+  float: none;
+  line-height: normal;
+  padding: 0 10px;
+  display: block;
+  margin-top: 15px;
+  font-size: 1.8em;
+}
+
+.team-right.last {
+  text-align: left;
+}
+
+.team-left .runs,
+.team-right .runs {
+  font-weight: 800;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  color: #3b579b;
+  padding-top: 20px;
+}
+
+.team-left .runRate,
+.team-right .runRate .team-left .overs,
+.team-right .overs {
+  font-size: .8em;
+  line-height: 1.2em;
+  color: #777;
+}
+
+.winner img,
+.loser img {
+  width: 100px;
+  height: 100px;
+}
+
+.match-list .team-right .score {
+  padding-right: 0;
+  padding-left: 10px;
+  text-align: right;
+}
+
+.match-content .summary {
+  font-size: 1.4em;
+  color: #3B579B;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin: 10px 0px;
+}
+
+.match-content .stadium {
+  font-size: 1em;
+}
+
+.violet-dash-bg {
+  background: #6092D1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0px;
+}
+
+.violet-dash-bg:hover {
+  background: #6092D1;
+  color: #fff;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #6092D1;
+}
+
+
+/************Media Query***************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .img_992 {
+    padding-left: 0px;
+  }
+  .team_992 {
+    padding-left: 3px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 480px) {
+  .winner img {
+    width: 75px;
+    height: 75px;
+  }
+  .loser img {
+    width: 75px;
+    height: 75px;
+  }
+  .match-content .summary {
+    font-size: 1em;
+  }
+  .match-list .team-right .score {
+    padding-right: 0;
+    padding-left: 40px;
+    text-align: right;
+  }
+  .team-left .runs,
+  .team-right .runs {
+    font-weight: 800;
+    font-size: 1.2em;
+  }
+  .resultsMatches .panel-title {
+    font-size: 13px
+  }
+}

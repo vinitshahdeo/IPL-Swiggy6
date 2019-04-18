@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Swiggy6 - Get upto 60% off! | A chrome extension to notify the sixers in live IPL matches.</title>
+      <meta name="author" content="Vinit Shahdeo">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+      <style>
+         body{
+         min-width: 600px;
+         padding: 0px;
+         margin: 0px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <ul class="resultsMatches list-unstyled">
+               <li>
+                  <div class="panel panel-primary">
+                     <div class="panel-heading match-header">
+                        <h3 class="panel-title white-color"><strong>SWIGGY 6</strong> - <a href="https://6.swiggy.com/">Get 60% Off after every SIXER!</a> <span class="label label-default" onclick="openGitHub()" id="developer"><span class="glyphicon glyphicon-hand-right"></span> vinitshahdeo</span><span class="pull-right" id="timer"><strong>IPL 2K19</strong></span></h3>
+                     </div>
+                     <div class="panel-body">
+                        <div class=" col-xs-12 col-md-6 match-list">
+                           <div class="col-xs-5 col-md-5 team-left team_992">
+                              <div class="score col-xs-6 col-md-6">
+                                 <div class="runs" id="batting-runs">140/7</div>
+                                 <div class="runRate"></div>
+                                 <div class="over" id="batting-over">19.5/20</div>
+                              </div>
+                              <div class=" col-xs-6 col-md-6 img_992">
+                                 <a href="#" class="winner" id="team1"><img src="http://cricket.indiatoday.in/ipl/2009/images/200X200/Chennai-Super-Kings.jpg" class="img-rounded" alt=""></a>
+                              </div>
+                           </div>
+                           <div class="col-xs-2 col-md-2">
+                              <div class="vs">versus</div>
+                           </div>
+                           <div class=" col-xs-5 col-md-5 team-right last team_992">
+                              <div class=" col-xs-6 col-md-6 img_992">
+                                 <a href="#" class="loser" id="team2"><img src="http://cricket.indiatoday.in/ipl/2009/images/200X200/Chennai-Super-Kings.jpg" class="img-rounded" alt=""></a>
+                              </div>
+                              <div class="score col-xs-6 col-md-6">
+                                 <div class="runs" id="bowling-runs"> 139/8</div>
+                                 <div class="runRate"></div>
+                                 <div class="over" id="bowling-over">20/20</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 match-content">
+                           <center>
+                              <h3 class="summary" id="summary">Chennai Super Kings won by 3 wickets</h3>
+                           </center>
+                           <center>
+                              <a href="#">
+                                 <button class="btn btn-default violet-dash-bg hidden-767 hidden-480" id="cricbuzz" title="Click for more updates">
+                                    Full ScoreCard
+                              </a>
+                           </center>
+                        </div>
+                        <!-- <button onclick="notifyMe()" id="noti">Notify me!</button>-->
+                        <center>
+                        <div class="col-xs-12 col-md-6"> 
+                        <br>
+                        <button type="button" class="btn btn-warning" id="alarmOff" title="Turn Off the sound notifications">Alarm <span class="badge"><span class="glyphicon glyphicon-volume-off"></span></button>
+                        <button type="button" class="btn btn-warning" id="alarmOn"  title="Turn On the sound notifications">Alarm <span class="badge"><span class="glyphicon glyphicon-volume-up"></span></button></center>
+                        </div>
+                     </div>
+                  </div>
+         </div>
+         </li>
+         </ul>
+      </div>
+      </div>
+      <script src="js/jquery.js" type="text/javascript"></script>
+      <script src="js/script.js" type="text/javascript"></script>
+   </body>
+</html>
