@@ -67,11 +67,6 @@ function notifyMe() {
 
   var deadline = new Date(Date.parse(new Date()) + 6 * 60 * 1000);
   initializeClock(deadline);
-  //var deadline = new Date(Date.parse(new Date()) +  6  * 1000);
-  // chrome.storage.local.set({timer: deadline}, function() {
-  //     console.log('coutdowntimer is set to ' + deadline);
-  //     countDownSiwggy();
-  //   });
 
   if (Notification.permission !== "granted")
     Notification.requestPermission();
@@ -144,18 +139,6 @@ function initializeClock(endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-
-//   function countDownSiwggy() {
-//     chrome.storage.local.get(['key'], function(result) {
-//         console.log('deadline is ' + result.key);
-//         initializeClock(result.key);
-//       });
-
-//   }
-
-//  countDownSiwggy();
-
-
 function alarm() {
   chrome.storage.local.get(['alarm'], function(result) {
     //var myAudio = new Audio(chrome.runtime.getURL("ipl.mp3"));
@@ -170,6 +153,7 @@ function alarmOff() {
     alarm: 'false'
   }, function() {
     console.log('alarm is off');
+    document.getElementById('swiggyAlarm').innerHTML = '<div class="alert alert-info" role="alert">Swiggy 6 IPL notifications are <strong>OFF</strong>!<br><span class="badge"><span class="glyphicon glyphicon-volume-off"></span> SOUND OFF</span></div>';
   });
 }
 
@@ -178,6 +162,7 @@ function alarmOn() {
     alarm: 'true'
   }, function() {
     console.log('alarm is on');
+    document.getElementById('swiggyAlarm').innerHTML = '<div class="alert alert-warning" role="alert">Swiggy 6 IPL notifications are <strong>ON</strong>!<br><span class="badge"><span class="glyphicon glyphicon-volume-up"></span> SOUND ON</span></div>';
   });
 }
 

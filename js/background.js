@@ -39,7 +39,7 @@ function notifyMe() {
   else {
     var notification = new Notification('That\'s a SIX!', {
       icon: 'assets/ipl.png',
-      body: "Apply SWIGGY6 and get exclusive offers!",
+      body: "Apply SWIGGY6 and get 60% OFF for next 6 min!",
     });
 
     notification.onclick = function() {
