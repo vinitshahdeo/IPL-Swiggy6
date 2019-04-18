@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
-logo: 'ipl.png'
-title: 'IPL SWIGGY6'
+logo: ipl.png
+title: IPL SWIGGY6
+show_downloads: true
