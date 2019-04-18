@@ -181,22 +181,6 @@ function alarm() {
   });
 }
 
-function alarmOff() {
-  chrome.storage.local.set({
-    alarm: 'false'
-  }, function() {
-    console.log('alarm is off');
-  });
-}
-
-function alarmOn() {
-  chrome.storage.local.set({
-    alarm: 'true'
-  }, function() {
-    console.log('alarm is on');
-  });
-}
-
 function playAudio() {
   var myAudio = new Audio(chrome.runtime.getURL("ipl.mp3"));
   myAudio.play();
