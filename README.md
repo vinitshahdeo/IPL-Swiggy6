@@ -2,7 +2,7 @@
 
 ![SWIGGY](assets/swiggy.gif)
 
-<h2 align="center">A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="">60%</a> Off after every sixer within 6 minutes. Click <a href="https://vinitshahdeo.github.io/IPL-Swiggy6/popup.html">here</a> for the demo!</h2> 
+<h2 align="center">A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="https://6.swiggy.com/">60%</a> Off [ Enter Coupon <kbd>SWIGGY6</kbd> ] after every sixer within 6 minutes. <br> Click <a href="https://vinitshahdeo.github.io/IPL-Swiggy6/popup.html">here</a> for the demo!</h2> 
 
 ### IPL Swiggy6 Notifications
 
