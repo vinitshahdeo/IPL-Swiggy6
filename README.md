@@ -1,9 +1,9 @@
-<h1 align="center"> IPL <a href="https://6.swiggy.com/">SWIGGY6</a> Notifications</h1>
+# IPL <a href="https://6.swiggy.com/">SWIGGY6</a> Notifications
 
 
 ![SWIGGY](assets/swiggy.gif)
 
-<h2 align="center">A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="">60%</a> Off after every sixer within 6 minutes.</h2>
+## A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="">60%</a> Off after every sixer within 6 minutes.
 
 ### IPL Swiggy6 Notifications
 
