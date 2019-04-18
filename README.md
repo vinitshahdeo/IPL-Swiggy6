@@ -42,7 +42,7 @@ MIT &copy; **[Vinit Shahdeo](https://github.com/vinitshahdeo)**
 [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
 
 
-> It doesn't belong to **Swiggy** or **IPL** promotion scheme. I've just made for my own purpose to order food online when a six is hit. **If you like this, you're most welcome to use this.**
+> It doesn't belong to any **Swiggy** or **IPL** promotion scheme. I've just made it for my own purpose to order food online when a six is hit. **If you like this, you're most welcome to use this.**
 
 ### Thanks!
 
