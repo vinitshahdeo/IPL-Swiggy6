@@ -33,7 +33,7 @@ function cricbuzz() {
 
 function notifyMe() {
   var deadline = new Date(Date.parse(new Date()) + 6 * 60 * 1000);
-  initializeClock(deadline);
+  // initializeClock(deadline);
   console.log('Yess, SIX');
   if (Notification.permission !== "granted")
     Notification.requestPermission();
@@ -97,6 +97,7 @@ function alarmOff() {
     alarm: 'false'
   }, function() {
     console.log('alarm is off');
+    document.getElementById('swiggyAlarm').innerHTML = '<div class="alert alert-info" role="alert">Swiggy 6 IPL notifications are <strong>OFF</strong>!<br><span class="badge"><span class="glyphicon glyphicon-volume-off"></span> SOUND OFF</span></div>';
   });
 }
 
@@ -105,6 +106,7 @@ function alarmOn() {
     alarm: 'true'
   }, function() {
     console.log('alarm is on');
+    document.getElementById('swiggyAlarm').innerHTML = '<div class="alert alert-warning" role="alert">Swiggy 6 IPL notifications are <strong>ON</strong>!<br><span class="badge"><span class="glyphicon glyphicon-volume-up"></span> SOUND ON</span></div>';
   });
 }
 
