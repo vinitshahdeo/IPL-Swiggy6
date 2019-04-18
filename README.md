@@ -3,7 +3,7 @@
 
 ![SWIGGY](assets/swiggy.gif)
 
-## A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches.<br> Get <a href="">60%</a> Off after every sixer within 6 minutes.
+## A chrome extension to notify the sixers in live <a href="https://www.cricbuzz.com/cricket-match/live-scores">IPL</a> matches. Get <a href="">60%</a> Off after every sixer within 6 minutes.
 
 ### IPL Swiggy6 Notifications
 
