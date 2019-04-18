@@ -14,8 +14,9 @@ xhr.addEventListener("readystatechange", function() {
       if (matches[i].series.type === 'IPL') {
         //document.getElementById('summary').innerHTML = matches[i].status;
         battingRuns = matches[i].score.batting.innings[0].score;
-        if ((battingRuns - score) >= 6) {
+        if ((battingRuns - score) == 6) {
           notifyMe();
+          updateScore(battingRuns);
         }
         break;
       }
@@ -24,11 +25,7 @@ xhr.addEventListener("readystatechange", function() {
 });
 
 xhr.open("GET", "https://www.cricbuzz.com/match-api/livematches.json");
-
-
 xhr.send(data);
-
-
 
 function notifyMe() {
 
@@ -44,15 +41,27 @@ function notifyMe() {
     notification.onclick = function() {
       window.open("https://6.swiggy.com/");
     };
-
     alarm();
   }
-
-
 }
 
+function updateScore(run) {
+  score = run;
+  chrome.storage.local.set({
+    score: run
+  }, function() {
+    console.log('score is set');
+  });
+}
 
-
+function fetchScore() {
+  chrome.storage.local.get(['score'], function(result) {
+    if (result.score) {
+      score = result.score;
+      console.log('score is fetched ',score);
+    }
+  });
+}
 
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
@@ -68,9 +77,6 @@ function getTimeRemaining(endtime) {
     'seconds': seconds
   };
 }
-
-
-
 
 function alarm() {
   chrome.storage.local.get(['alarm'], function(result) {
@@ -101,3 +107,5 @@ function playAudio() {
   var myAudio = new Audio(chrome.runtime.getURL("ipl.mp3"));
   myAudio.play();
 }
+
+fetchScore();

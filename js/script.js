@@ -209,11 +209,7 @@ function getFlag(team) {
   }
 }
 
-
 function openGitHub() {
-
   window.open('https://www.github.com/vinitshahdeo',
     ' ', 'width=50%, height=30%');
-
-
 }
