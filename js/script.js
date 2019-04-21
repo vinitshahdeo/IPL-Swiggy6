@@ -147,6 +147,9 @@ function getFlag(team) {
   else if (teamName.indexOf('punjab') !== -1) {
     return 'punjab.png';
   }
+  else if (teamName.indexOf('kolkata') !== -1) {
+    return 'kolkata.png';
+  }
   else {
     return 'ipl.png';
   }
