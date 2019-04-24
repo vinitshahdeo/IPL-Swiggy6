@@ -139,7 +139,7 @@ function getFlag(team) {
     return 'hyderabad.png';
   }
   else if (teamName.indexOf('bangalore') !== -1) {
-    return 'banaglore.png';
+    return 'bangalore.png';
   }
   else if (teamName.indexOf('delhi') !== -1) {
     return 'delhi.png';
